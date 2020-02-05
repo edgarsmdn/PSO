@@ -10,9 +10,13 @@ Particle Swarm Optimization (PSO) is an stochastic optimization algorithm inspir
 
 The equations that describe the velocity and position of the particles at each iteration are:
 
-![equation](https://latex.codecogs.com/gif.latex?x_i%5E%7Bt&plus;1%7D%20%3D%20w%20%7E%20v_i%5E%7Bt%7D%20&plus;%20c_1%20%7E%20r_1%20%7E%20%28x_%7Bi%2Cb%7D%5E%7Bt%7D%20-%20x_i%5E%7Bt%7D%29%20&plus;%20c_2%20%7E%20r_2%20%7E%20%28x_%7Bg%2Cb%7D%5E%7Bt%7D%20-%20x_i%5E%7Bt%7D%29)
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?v_i%5E%7Bt&plus;1%7D%20%3D%20w%20%7E%20v_i%5E%7Bt%7D%20&plus;%20c_1%20%7E%20r_1%20%7E%20%28x_%7Bi%2Cb%7D%5E%7Bt%7D%20-%20x_i%5E%7Bt%7D%29%20&plus;%20c_2%20%7E%20r_2%20%7E%20%28x_%7Bg%2Cb%7D%5E%7Bt%7D%20-%20x_i%5E%7Bt%7D%29">
+</p>
 
-![equation](https://latex.codecogs.com/gif.latex?x_i%5E%7Bt&plus;1%7D%20%3D%20x_i%5Et%20&plus;%20v_i%5E%7Bt&plus;1%7D)
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?x_i%5E%7Bt&plus;1%7D%20%3D%20x_i%5Et%20&plus;%20v_i%5E%7Bt&plus;1%7D">
+</p>
 
 where 
 ![equation](https://latex.codecogs.com/gif.latex?v) and ![equation](https://latex.codecogs.com/gif.latex?x) are the velocity and the postion of the particle ![equation](https://latex.codecogs.com/gif.latex?i) respectively; ![equation](https://latex.codecogs.com/gif.latex?w) is an scaling factor (a.k.a. inertia weight) that prevents the exponential growth of the velocity at each iteration; ![equation](https://latex.codecogs.com/gif.latex?t) stands for the current iteration; ![equation](https://latex.codecogs.com/gif.latex?c_1) and ![equation](https://latex.codecogs.com/gif.latex?c_2) are the cognition and population-confidence parameters respectively; ![equation](https://latex.codecogs.com/gif.latex?r_1) and ![equation](https://latex.codecogs.com/gif.latex?r_2) are random variables uniformly distributed between 0 and 1; ![equation](https://latex.codecogs.com/gif.latex?b) denotes the best position found so far and ![equation](https://latex.codecogs.com/gif.latex?g) denotes the best position found until the current iteration by the whole swarm. 
