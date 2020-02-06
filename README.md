@@ -2,7 +2,7 @@
 
 ## Development
 
-This work was part of the project I did during my undergrad research internship in the summer of 2018 at the Centre for Process Integration, The University of Manchester (https://www.ceas.manchester.ac.uk/cpi/) on stochastic optimization.
+This work was part of the project I did during my undergrad research internship in the summer of 2018 at the [Centre for Process Integration](https://www.ceas.manchester.ac.uk/cpi/), The University of Manchester on stochastic optimization.
 
 ## Background
 
