@@ -31,7 +31,7 @@ The function requires Python 3.0 (or more recent versions). The *stoch_optim_uti
 
 ## Functioning
 
-* The inputs needed by the function are:
+#### Inputs
 
 ```
 PSO(f, num_par, bounds, max_iter, c1, c2, w, w_red)
@@ -52,6 +52,18 @@ PSO(f, num_par, bounds, max_iter, c1, c2, w, w_red)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7. The **inertia weight** parameter as an integer or float.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8. The **reduction parameter** ![equation](https://latex.codecogs.com/gif.latex?w_%7Bred%7D). This reduces the inertia weight at each iteration following: ![equation](https://latex.codecogs.com/gif.latex?w%5E%7Bt&plus;1%7D%3D%20w_%7Bred%7D%20%7E%20w%5Et) 
+
+#### Outputs
+
+```
+Optimum: (class) Results with:
+        Optimum.f: (float) The best function value found in the optimization
+        Optimum.x: (array) The best point in which the function was evaluated
+        Optimum.traj_f: (array) Trajectory of function values
+        Optimum.traj_x: (array) Trajectory of positions
+```
+
+#### General information
 
 * In this implementation the initial position of the particles is set randomly, while their initial velocities are set to zero. 
 
