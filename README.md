@@ -1,5 +1,9 @@
 # Particle Swarm Optimization
 
+<p align="center">
+<img src="https://github.com/edgarsmdn/PSO/blob/master/PSO.gif" width="500"> 
+</p>
+
 ## Development
 
 This work was part of the project I did during my undergrad research internship in the summer of 2018 at the [Centre for Process Integration](https://www.ceas.manchester.ac.uk/cpi/), The University of Manchester on stochastic optimization.
