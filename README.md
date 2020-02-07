@@ -1,7 +1,7 @@
 # Particle Swarm Optimization
 
 <p align="center">
-<img src="https://github.com/edgarsmdn/PSO/blob/master/PSO.gif" width="500"> 
+<img src="https://github.com/edgarsmdn/PSO/blob/master/PSO_1.gif" width="500"> 
 </p>
 
 ## Development
