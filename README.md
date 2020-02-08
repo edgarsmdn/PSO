@@ -78,3 +78,7 @@ Kennedy, J. and Eberhart, R., 1995, November. Particle swarm optimization. In Pr
 
 A. Kaveh, Advances in Metaheuristic Algorithms for Optimal Design of Structures, Chapter 2. Particle Swarm Optimization,
 DOI 10.1007/978-3-319-46173-1_2
+
+## License
+
+This repository contains a [MIT LICENSE](https://github.com/edgarsmdn/PSO/blob/master/LICENSE)
