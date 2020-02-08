@@ -86,6 +86,7 @@ def LS_p_v3(f, p_init, max_iter, bounds, radius, reduce_iter, reduce_frac):
     best_value: (float) The best value found with the iteration using the best_position
     best_position: (array) The best position in which the final best_value was evaluated
     trajectory: (matrix) Column 0: Number of iteration. Column 1: Value for current iteration
+    trajectory_x: (matrix) Positions visited during the iterations
 
     --- Notes ---
     1. The "p" states for the "plot" version of the algorithm. It outputs all the iteration trajectory
@@ -103,9 +104,13 @@ def LS_p_v3(f, p_init, max_iter, bounds, radius, reduce_iter, reduce_frac):
     best_value = f(p_init)
     dim = len(p_init)
     fail_count = 0
-    trajectory = np.zeros((max_iter + 1, 2))
+    
+    trajectory       = np.zeros((max_iter + 1, 2))
     trajectory[0][0] = 0
     trajectory[0][1] = best_value
+    
+    trajectory_x    = np.zeros((max_iter + 1, dim))
+    trajectory_x[0] = best_position
     
     # Iteration Loop
     for i_iter in range(max_iter):
@@ -136,8 +141,11 @@ def LS_p_v3(f, p_init, max_iter, bounds, radius, reduce_iter, reduce_frac):
             fail_count = 0
         # Stores trajectory
         trajectory[i_iter + 1][0] = i_iter + 1
-        trajectory[i_iter + 1][1] = best_value 
-    return best_value, best_position, trajectory
+        trajectory[i_iter + 1][1] = best_value
+        trajectory_x[i_iter + 1]  = best_position
+        
+        
+    return best_value, best_position, trajectory, trajectory_x
 
 def RS_f_v2(f, p_best, max_iter, bounds):
     '''
